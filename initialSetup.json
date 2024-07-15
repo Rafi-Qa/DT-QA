@@ -1,0 +1,42 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://gatsmis.doctortool.id",
+      "localStorage": [
+        {
+          "name": "8c64a31b_ACCESS_TOKEN",
+          "value": "ep8p0AmPOI+CTjEH9gkYD++bNhtvUAHnMhgojwKB9knU90oBzMLvWfhR+JrYlByrQJMok3mndNQxHjhLa0CdWL7OI2x5uCH8yqTDIZ6d5cbSrH8itHw5qQNhpW05/6uQIXeK3AehjWrao9UxdASBB3lZDRKEb3RcLDuvyjb91cv6APAxYxpKfJLbkWRRuFsfNOxott3NUk8MPHVo+pQZ+i7TLSnJSsRcsd7O9WEuHzXuuK+a3nYiGLk1ApwX5mK7oKbO3g+/dvJFOUj/lcYWmoWvhpbMF8Y1dBEofdygfvnlwhqQe2z89uVkjFeChZc7tkZ3Ilhuc9Km9Am3YOM/uLl6F5U/8eKne9iWOnbJBL2lkY//pQto26pIuQ7EESyzFtM62SAfB1xtWqsqtfIVer1bg0uaDMSi+c6lJazuc6PmWMA7bRLE74EoQDmEgE3o1uyI1TGSKbdSzUAH9SKyuPNh2lUZZ6u0VEfTLZfdbGzur9Gt8QQCTYyMasrhBkHFlyjIzwPngwWbs72C3L+nTOs7EHXPpV17KWh2fJteY5RXXhx240AwWgrNV4+PQT47XxFERS28P9kveCC3YiI0zA=="
+        },
+        {
+          "name": "8c64a31b_FKTP_APP_ID",
+          "value": "fGayfeCOjkX9Xu8MLkjltQ=="
+        },
+        {
+          "name": "DTLStorage",
+          "value": "\"8c64a31b_\""
+        },
+        {
+          "name": "8c64a31b_MEDFAC_TOKEN",
+          "value": "kpEr97CnlckTeSQ4jMxCxILWH7brjS/H+yPMFAwmBp9Kkp2Z5nOcVxN/0mS81pyJ/V39sQ7NXxPnLKV1c3R28T22dx1YkFC8zEWvgjVmUQq+FMOVZy+nzinw+sWfvwYojhy4MNoO1KVEErKY0pR2pZxQidhw6L8vRzH25N7RFoE4VY1J1EtURQ+J+2hzYngqb0/2HjpddhPJyYJZmUI/i6emfv9tvN7nxUQz7+BGui0up7aTklOJ65Cb7WT9CeAmZQU2GU3ByxUd691trkG3JsoQFspSaBC+NKBksGCmc+RGwSXdTpX8IhP7QW31NqbP6QjXR6pdr+Hnox4pMi1SGzkuqra6VSBbqU3f7+DpmA63D1iqc57DzPipcNDaWnHhE/uNDmizYzVdyvyqnbE4BiKElL7kH2aP3mf0iznxIV8UIMO2jEg84WUxu2A/8AVNL1i/nd80uVyPyGfDg+/amnkEVxNVceS1Mm578pOh345kVe7ZmkMmUpGFSHrxioqMdWEyaYVeJlJUnEy6aEpvMomcFXPRsWU+OSw9obknzpFOAQcd6ezo/c7Xi8a3Wlt1XH8IdBge7VZ7oruho8Ul9sOC4I/n39V2sOlpHe4MYNvyMcKBxne/j5Y28HQ8DaLU7/xH2mKx/GFkm3s/LjnwmDqlxr1cX4cvbE0mBP5lVx3qyKhqNb29W1Bg0ZsoSl1Z41EARICO/aLatjgEyKDDzguUZPdnsleOo2InLZ9rR/TVMmNPrsBHu2G6j0Jvpx06gcvXK7+oRMcEiZMSu4PgRc87XmHskel0r2kmM/CKNdVarco6fZHQ++iABneX57y6tEV0Ax59azh20HbUOJAHTA7zKiGycR0AD2HLT6VPBmO1IS2unQs+GBzK8Dp6v5xKKSnfVdExFwmjynepb7PdYZBV8VKvUGu8znWVCaBvIYu4QZ1k31I+RYRJLyIIZO52fb30LEjAIFfUkzYNK9P/8OcOY7pPPB9vdt3BtPUay/gPLemK9ZUKrOUhh3qOMvo+/nrLpoif3zzzzL8om4JWDzSX5O+Gv5PN9wwG3iULrfoXTCs6c0YIm51TndqXMYYSdVZ/GtvvGweRZB0glwbvOwVSKf4SOkLde4b61q/5ypsT0EeMeIzuhB0XtfetTPBb1gPdQW921/bdp07Rgb1yjg=="
+        },
+        {
+          "name": "8c64a31b_WCF_ENDPOINT",
+          "value": "5xWcf3WWgO2zENLA92kX4H4nE5LctXTI1+/CQXeTJ3I1FPiy1TEmhvVdvih+WHQM"
+        },
+        {
+          "name": "8c64a31b_MEDFAC_TIMESTAMP",
+          "value": "oy9qPYNsCVLYbTAGEfZkNw=="
+        },
+        {
+          "name": "8c64a31b_MEDICAL_FACILITY_ID",
+          "value": "WZkMYD5l097dNYdpFAwZgQ=="
+        },
+        {
+          "name": "8c64a31b_URL_LIST",
+          "value": "ycn8XzByAsEkb+1sw14Axg=="
+        }
+      ]
+    }
+  ]
+}
