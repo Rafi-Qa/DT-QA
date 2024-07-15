@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx playwright test --config=playwright.config.ts --headed",
+    "test": "npx playwright test --config=playwright.config.ts",
+    "test:browser": "npx playwright test --config=playwright.config.ts --headed",
     "report": "npx playwright show-report",
     "codegen": "npx playwright codegen https://gatsmis.doctortool.id"
   },
