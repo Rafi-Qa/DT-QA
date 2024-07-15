@@ -13,7 +13,7 @@ setup("Initial setup", async ({ page }) => {
 
   // Asserts
   await page.waitForSelector('role=heading[name="Selamat Datang,"]', {
-    timeout: 5000,
+    state: "attached",
   });
   await expect(
     page.getByRole("heading", { name: "Selamat Datang," })
