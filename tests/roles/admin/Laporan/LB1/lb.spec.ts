@@ -11,7 +11,7 @@ test.describe("Admin can access and see report LB1", () => {
     await page.locator("a").filter({ hasText: "LB1" }).click();
     await page
       .locator(
-        ".telerik-blazor.k-button.k-input-button.k-button-solid.k-button-md.k-button-solid-base.k-icon-button"
+        ""
       )
       .click();
 
