@@ -5,36 +5,36 @@
       "origin": "https://gatsmis.doctortool.id",
       "localStorage": [
         {
-          "name": "189fca62_FKTP_APP_ID",
-          "value": "fGayfeCOjkX9Xu8MLkjltQ=="
+          "name": "af11cc7e_URL_LIST",
+          "value": "ycn8XzByAsEkb+1sw14Axg=="
         },
         {
-          "name": "189fca62_MEDICAL_FACILITY_ID",
+          "name": "af11cc7e_MEDICAL_FACILITY_ID",
           "value": "WZkMYD5l097dNYdpFAwZgQ=="
         },
         {
-          "name": "189fca62_MEDFAC_TOKEN",
-          "value": "kpEr97CnlckTeSQ4jMxCxILWH7brjS/H+yPMFAwmBp9Kkp2Z5nOcVxN/0mS81pyJ/V39sQ7NXxPnLKV1c3R28T22dx1YkFC8zEWvgjVmUQqINjvPiQlZqOpcX0hk66AGM5fvJojivRhRdQvSB4uiW6+2dpoKSaQgDADjXm3JhbHnT5LAFSowbv+DYWCvlq5fMlhPEDe4fBfZSgYzE4waMwm+Bdob0R/ohQJB8kRJugcVydtKTEBqfd8gc4Kj3/sFMgs1DusAx30WrIqovgY2/sJdLbYZoKBqOd8tKYOlKeQiKg/O+fiywBTxFZpL6IJkd3Nuw64xP3ZpBgTyfEH+c3dt0nL68PheC8tnkR/uhTD3wwAQ5tiPpGDlHDs7UcY4kRg1Nqttd6jHue9ujpAfUdSqhWnir3MtKhEl4hq4O0Xyop6supW+5Vy32KOb4ges2h2zXh5j+wd4i3UomSRsrBCTZbktFtCoaF4HSLdSes+WC/B8sAV2VgX9ndhpAFSbZqEgNd2vMfNoFgABVuwadkqk1popfmaqBKrf1z8UMFJ752QQzpzqGsDl7WSo1Ar1HlFZRPeblmLfNr83Bjs72IMvkgUgdcGdNAE1ilae2QDLCGXrS7EtRtbN5lmOzoHGwfT9WODpwTvrinDEkadnMH8Auxyndde3risuhLX+W+psaYZ/T+lh4LWW2AYefvlduHdARIv1ADAzwFgOmcKXFA6ZrSgj8B4TkWjGrhb411GRZCB9jv5qbDJBoUrHA0zC9UgjmiBZGCF9nhw5V02eMFe/U7k2AawKPBucRCDzqRxI3nWbyNZ3KTXm5sy8paNkJuZwCePJ+Xz1gvL3Rt3gFlSMMrblsXolJqNxQHiEe7klE1B9GEKYLZvzEaqLF8aFg4RBBYz3SARrAfSqxG/3nSi9h42TV4O/zcG00rd4wGNmTKgw0V0WMmbNwxrjY/zn2RQ5pPOR96Tko6s6FAJ0vSy0OMFaAsCT2fpQvQuStkJLluAddDdLbRX7Vk0vGwNAA20qL/xWRXCfrgQexp+aQUeFQh8GAflDTE6IkixCtLewLr/qVS8XW1UGKdlcNJ9fWt9SUHRC1tkKvjiak+NZ08rWa1qxTD8EPYTkq26XD9H9+8jux10Bb9om3/PBmx4/bmBSFX2l74y8I0S/KFGV/w=="
+          "name": "af11cc7e_ACCESS_TOKEN",
+          "value": "ep8p0AmPOI+CTjEH9gkYD5CJobVhwfVaQeXYIyu/hLxgoLcd//S3GaG4lw2orDFVTvKI8mucjCz0kBzfhP5Z1mN2iLPJMumT/3vsF2WIFZYrt9LOquahM4My8Ocz80ktHbIlDxFC3ZaoKjXCSoO2elZopXVSY/lJkDA0RD+S+jD2qqQTrWNl4U03KBAM9iGv7pNbzDQ+NYHOPm8m9/fTJ/ExE9aY5E1RH6vL2Ipar9Mnfg2XHMraOyddgnVa2J+4VyZz3tR2fYrJeIgwzVzHxGyE+PcwBjoPjuLU5Mhr4W/LA82MmJ+ilrL040TZtPgn4gOT5mnV9KOrQN+2WZ9a76VE8Mymo4P8G78tgTHuMhcR9FVFo741+bR/JRTeRtHVv0nqkOXxC4Vh2DoiU0/bj1QBk83IuXBgv4J/b7IFXddlMJFh8bJCa5vqoh8EqoDJWg6545moJsPj0+PERh1fXvDMXgh/DJCLe4CezhoVIPAWU+vAl0Gosm1I8nKI3tjA4iv0KY+3IvAv5uVSpdl0A+VP3QbTquuMikfgfrYcqbkyH7m6ckV83AdP//LJZiEYHA0goBBOAGe1HvwxvxfQ6Q=="
         },
         {
-          "name": "189fca62_WCF_ENDPOINT",
+          "name": "af11cc7e_FKTP_APP_ID",
+          "value": "fGayfeCOjkX9Xu8MLkjltQ=="
+        },
+        {
+          "name": "af11cc7e_WCF_ENDPOINT",
           "value": "5xWcf3WWgO2zENLA92kX4H4nE5LctXTI1+/CQXeTJ3I1FPiy1TEmhvVdvih+WHQM"
         },
         {
           "name": "DTLStorage",
-          "value": "\"189fca62_\""
+          "value": "\"af11cc7e_\""
         },
         {
-          "name": "189fca62_URL_LIST",
-          "value": "ycn8XzByAsEkb+1sw14Axg=="
+          "name": "af11cc7e_MEDFAC_TOKEN",
+          "value": "kpEr97CnlckTeSQ4jMxCxILWH7brjS/H+yPMFAwmBp9Kkp2Z5nOcVxN/0mS81pyJ/V39sQ7NXxPnLKV1c3R28Y9Ut5sBM9agOoCHl8t5vaaQJQcCr68hnkDBn2M1iIRw/DCxJyD0CK5ZVhRo76fHEsTyfvALJWJRSJeiQv6IJ32a0SGraI5tjZS+0hSuoo/CRqO8OwNu8iGVIMtH6ANJ61Oc4KA/3QUx8mdM68OgYietxZtZAH2+Xx/1GinfOYm3v5Zq3Hxt8Sg46A95sCo1DJ8zP6EHbnz4uULXHwBjAqLQ3gHNQtBEy1xFWkqa65BDMrNXpn+xYYLXYeRwJWXhmS3NfaFBXbwd0strV4wh0Tx8KkES2Gvedq7yiGrcddO59PvTYzQSt6J565Y08TSbXUlMkxMG3KNynX5qZuiSL0h/M9b4LJMgP9UBNYE8bw9GKVj3kc8yDdNygMQG98Kkvn9LVQtntV+FArc3nXd8JEMG/5d8Is059kaAL40xW6QqkEdqCkMSpIubTr+DeSPjXFtv1cQrhqlFRJc6eXgEHesVFvpvYbzdbwiRJYtav9v5umuFx/MUpD4DrQH7E6vg7DAIGwL9F46jO8aBXUbtvIeqYR4LfzthAjdIIXC8KuIoYFcHc5IGhQM8Y819OR2kgN8zdbQZ2ZzWg7z9DX5yaIjdbLa6MPp7L4WaOw4amhL1s77fJSS9q186MxRvShi+JxNbQetGS3SLWXhrI9mUoRTbTnP9QBIcwucEJesblF2D6n5wIpjS3ULglhlHLVjEOmX5jM4FaG/lviqNTqJBeXI4atakmeszsl2W+itgfRAFXLZvjNicNd3Lann05u2MBkgRbCTpDBjhTPM4fBfOQy5mef7Au/Rh37Z79tvJH+WZm9Vp0XpX3uicOt3/Pka8rOxSYgZuiXqH1JkqdtMi0ZenVx2HbY5zz1P2UMZ0Qsg0VVYge5PfKn5tW9q1XbZaZa/awYxGB+dxeBZhTupT3GhsyDQHI74G/KF9K48fhdMVuE83fA8BaukQK9C5KbqrsgDVRkIckdJ08GQpHyGbdZqZ31YChu+NypQl4vSp+d2a5UT+/OH018V6yCACMO4m+C6Srs6hBAAB/fhMewTVR/XtkPOlW8e7WbDSAZfxoDs1HikwcaMGp0/5qtVOSNBMyg=="
         },
         {
-          "name": "189fca62_ACCESS_TOKEN",
-          "value": "AEv03QezfYk3bnIRihxMpkENwyr7bxGQStokWhaGu6rXIb+HAfTiE7yZIRsREb5BuuiA4r1sA4TX/C2uCADYOjiOru2MoB9b81F4yyNHbIVgzz1TR/b9wEeJTZH2vKUn/ASDHOoJ2Tnkufk8utb6mOkmTv7DjJ+yup+SD6FfreHMfYNGysKA5e5WFywQZ/+yeJpJbhdp2WJtufBim5hPDgGaPkjLWK/+Cdz05YoLmoHBS7CAV8QhZVkTrBv9Wq9qpBdtzMyT0qwYeirMxjI5BBA9ESc6xyT8zmzcEWRzPLLtCLayFSt4PIMKpwhjzfHTyrm9dUuE7G6cagnJYY2fu9F7wpqXN9gcEhS8hv04RQSWivOuuwtQ8qUPzauEHGzpAzSUxmp6b4Irvjyy5Fcbhs2l6dbHNOxi3/kyOebV7GMzzwRTXh+DWMNqc6JOQi8P4cj46Y3b7rpCIxlMc4JYMMTntFrJAHfKtlghhIeqDT597gWVJgKP1tH71EvB+mQHAsIzUwrAS7l6bq8Wb+dK9rUC93HlCpKhXjLZG3eiOpmqcqDV4x/bvTNUKLUFR8LRmVoqpmSIFGdIdNJYlr0k426q/cNwZpsF7aXRHI/UeH4="
-        },
-        {
-          "name": "189fca62_MEDFAC_TIMESTAMP",
-          "value": "vQ6LYR36/8DCAYWwiyizZg=="
+          "name": "af11cc7e_MEDFAC_TIMESTAMP",
+          "value": "Iz+D58+FhovglVp5oRpabw=="
         }
       ]
     }
