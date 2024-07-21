@@ -1,14 +1,18 @@
 import { test as setup, expect } from "@playwright/test";
+import { URL, ID } from "../tests/helper/setupConfig";
+
+const [appIdText, appIdPassword] = ID.split(" - ");
 
 setup("Initial setup", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("button", { name: "Mulai" }).click();
   await page.getByPlaceholder("Alamat URL").click();
-  await page.getByPlaceholder("Alamat URL").fill("srv-staging");
+  await page.getByPlaceholder("Alamat URL").fill(URL);
   await page.locator("#tbappId_text").click();
-  await page.locator("#tbappId_text").press("CapsLock");
-  await page.locator("#tbappId_text").fill("ABCD");
-  await page.locator("#tbappId_Password").fill("1234");
+  if (appIdText && appIdPassword) {
+    await page.locator("#tbappId_text").fill(appIdText);
+    await page.locator("#tbappId_Password").fill(appIdPassword);
+  }
   await page.getByRole("button", { name: "Simpan" }).click();
 
   // Asserts
