@@ -4,5 +4,11 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 
+
 # env files
 .env.staging
+
+# auth
+/tests/auth
+
+

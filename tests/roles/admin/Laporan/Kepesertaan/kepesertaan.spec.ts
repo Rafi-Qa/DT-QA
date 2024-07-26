@@ -13,7 +13,7 @@ test.describe("Admin can access and see report Kepesertaan", () => {
   }) => {
     await page.getByRole("button", { name: "Laporan" }).click();
     await page.locator("#dv_81001 a").click();
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(4000);
     await page.getByRole("button", { name: "Lihat" }).click();
     await expect(
       page.getByText("Laporan Penyebaran Pasien Berdasarkan Jenis Kelamin")

@@ -23,7 +23,10 @@ export default defineConfig({
 
   workers: 4,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [["list"], ["json", { outputFile: "test-results.json" }]],
+  reporter: [
+    ["list"],
+    ["json", { outputFile: "test-results/test-results.json" }],
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     baseURL: process.env.BASE_URL, // ganti dengan URL yang sesuai
@@ -61,10 +64,10 @@ export default defineConfig({
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
-    {
-      name: "Google Chrome",
-      use: { ...devices["Desktop Chrome"], channel: "chrome" },
-    },
+    // {
+    //   name: "Google Chrome",
+    //   use: { ...devices["Desktop Chrome"], channel: "chrome" },
+    // },
   ],
 
   timeout: 1200000,

@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --config=playwright.config.ts",
+    "test:debug": "PWDEBUG=1 npx playwright test --config=playwright.config.ts",
     "test:browser": "npx playwright test --config=playwright.config.ts --headed",
     "report": "npx playwright show-report",
-    "codegen": "npx playwright codegen https://gatsmis.doctortool.id"
+    "codegen": "npx playwright codegen https://gatsmis.doctortool.id "
   },
   "keywords": [],
   "author": "",
