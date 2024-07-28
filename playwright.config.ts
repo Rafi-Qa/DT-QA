@@ -21,7 +21,8 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
 
-  workers: 4,
+  workers: 5,
+
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ["list"],
@@ -39,9 +40,14 @@ export default defineConfig({
   projects: [
     { name: "setup", testMatch: /.*\.setup\.ts/ },
     {
-      name: "chromium",
-      use: { ...devices["Desktop Chrome"], storageState: "initialSetup.json" },
+      name: "Google Chrome",
+      use: {
+        ...devices["Desktop Chrome"],
+        channel: "chrome",
+        storageState: "initialSetup.json",
+      },
       dependencies: ["setup"],
+      fullyParallel: true,
     },
 
     // {

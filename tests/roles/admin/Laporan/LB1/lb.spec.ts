@@ -9,6 +9,8 @@ test.describe("Admin can access and see report LB1", () => {
   test("Admin can see report LB1", async ({ page }) => {
     await page.getByRole("button", { name: "Laporan" }).click();
     await page.locator("a").filter({ hasText: "LB1" }).click();
+
+    await expect(page.getByRole("heading", { name: "LB1" })).toBeVisible();
     await page.locator("button:near(.k-input-inner)").nth(1).click();
 
     await page.getByRole("button", { name: "June" }).click();
