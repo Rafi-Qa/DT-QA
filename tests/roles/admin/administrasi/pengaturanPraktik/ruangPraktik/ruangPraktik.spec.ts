@@ -6,11 +6,14 @@ test.describe.serial("Ruang Praktik", () => {
     await page.goto("/MedicalFacilityDashboard");
     await page.waitForLoadState("load");
     await page.reload();
-  });
-  test("Admin can add practice room", async ({ page }) => {
     await page.getByRole("button", { name: "Administrasi" }).click();
     await page.getByRole("button", { name: "Pengaturan Praktik" }).click();
     await page.locator("a").filter({ hasText: "Ruang Praktik" }).click();
+    await expect(
+      page.getByRole("heading", { name: "Ruang Praktik" })
+    ).toBeVisible();
+  });
+  test("Admin can add practice room", async ({ page }) => {
     await page.getByRole("button", { name: "Tambah" }).click();
 
     // Input Poli
@@ -30,9 +33,6 @@ test.describe.serial("Ruang Praktik", () => {
   });
 
   test("admin can't add practice room with same name", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page.getByRole("button", { name: "Pengaturan Praktik" }).click();
-    await page.locator("a").filter({ hasText: "Ruang Praktik" }).click();
     await page.getByRole("button", { name: "Tambah" }).click();
 
     // Input Poli
@@ -47,16 +47,8 @@ test.describe.serial("Ruang Praktik", () => {
   });
 
   test("admin can't add practice room without input form", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page.getByRole("button", { name: "Pengaturan Praktik" }).click();
-    await page.locator("a").filter({ hasText: "Ruang Praktik" }).click();
-    await expect(
-      page.getByRole("heading", { name: "Ruang Praktik" })
-    ).toBeVisible();
     await page.getByRole("button", { name: "Tambah" }).click();
-    await page
-      .getByRole("button", { name: "Simpan" })
-      .click({ noWaitAfter: true });
+    await page.getByRole("button", { name: "Simpan" }).click();
     await expect(
       page.getByText("Gagal menambahkan data. Mohon coba kembali.")
     ).toBeVisible();
@@ -64,12 +56,6 @@ test.describe.serial("Ruang Praktik", () => {
   });
 
   test.skip("admin can edit practice room", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page.getByRole("button", { name: "Pengaturan Praktik" }).click();
-    await page.locator("a").filter({ hasText: "Ruang Praktik" }).click();
-    await expect(
-      page.getByRole("heading", { name: "Ruang Praktik" })
-    ).toBeVisible();
     await page.getByRole("button", { name: "Go to the last page" }).click();
     await page.getByRole("button", { name: "Ubah" }).nth(2).click();
     await page.locator("#roomName").click();
@@ -78,13 +64,6 @@ test.describe.serial("Ruang Praktik", () => {
   });
 
   test("admin can delete practice room", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page.getByRole("button", { name: "Pengaturan Praktik" }).click();
-    await page.locator("a").filter({ hasText: "Ruang Praktik" }).click();
-    await expect(
-      page.getByRole("heading", { name: "Ruang Praktik" })
-    ).toBeVisible();
-
     await page.getByRole("button", { name: "Go to the last page" }).click();
     await page.getByRole("button", { name: "Hapus" }).nth(2).click();
     await expect(

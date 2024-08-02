@@ -8,7 +8,6 @@ import {
   kasirEmail,
   password,
 } from "../helper/auth";
-import exp from "constants";
 
 test.describe("Auth", () => {
   test.use({ storageState: "initialSetup.json" });
@@ -17,7 +16,7 @@ test.describe("Auth", () => {
     await page.goto("/Login");
   });
 
-  test.only("Login admin with valid credentials", async ({ page }) => {
+  test("Login admin with valid credentials", async ({ page }) => {
     await page.waitForSelector("input", { state: "visible" });
     await page.getByPlaceholder("Email").click();
     await page.getByPlaceholder("Email").fill(adminEmail);

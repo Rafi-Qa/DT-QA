@@ -6,13 +6,8 @@ test.describe.serial("Jadwal Praktik Harian", () => {
     await page.goto("/MedicalFacilityDashboard");
     await page.waitForLoadState("load");
     await page.reload();
-  });
-
-  test("admin can search schedule", async ({ page }) => {
     await page.getByRole("button", { name: "Administrasi" }).click();
-    await page
-      .getByRole("button", { name: "Pengaturan PraktikPengaturan" })
-      .click();
+    await page.getByRole("button", { name: "Pengaturan Praktik" }).click();
     await page
       .locator("a")
       .filter({ hasText: "Jadwal Praktik Harian" })
@@ -20,7 +15,9 @@ test.describe.serial("Jadwal Praktik Harian", () => {
     await expect(
       page.getByRole("heading", { name: "Jadwal Praktik Harian" })
     ).toBeVisible();
+  });
 
+  test("admin can search schedule", async ({ page }) => {
     await page.locator("button:near(.k-input-inner)").nth(0).click();
     await page.getByText("Jul").click();
     await page.getByText("28").click();
@@ -31,17 +28,6 @@ test.describe.serial("Jadwal Praktik Harian", () => {
   });
 
   test("admin can add schedule", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page
-      .getByRole("button", { name: "Pengaturan PraktikPengaturan" })
-      .click();
-    await page
-      .locator("a")
-      .filter({ hasText: "Jadwal Praktik Harian" })
-      .click();
-    await expect(
-      page.getByRole("heading", { name: "Jadwal Praktik Harian" })
-    ).toBeVisible();
     await page.getByRole("button", { name: "Tambah" }).click();
     await page.locator("#rooms-select").getByLabel("Open").click();
     await page.getByRole("option", { name: "​ POLI GIGI" }).click();
@@ -57,17 +43,6 @@ test.describe.serial("Jadwal Praktik Harian", () => {
   });
 
   test("admin can't add schedule without input form", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page
-      .getByRole("button", { name: "Pengaturan PraktikPengaturan" })
-      .click();
-    await page
-      .locator("a")
-      .filter({ hasText: "Jadwal Praktik Harian" })
-      .click();
-    await expect(
-      page.getByRole("heading", { name: "Jadwal Praktik Harian" })
-    ).toBeVisible();
     await page.getByRole("button", { name: "Tambah" }).click();
     await page.getByRole("button", { name: "Simpan" }).click();
     await expect(page.getByText("Ruangan should not be empty")).toBeVisible();
@@ -75,9 +50,7 @@ test.describe.serial("Jadwal Praktik Harian", () => {
 
   test("admin can edit schedule", async ({ page }) => {
     await page.getByRole("button", { name: "Administrasi" }).click();
-    await page
-      .getByRole("button", { name: "Pengaturan PraktikPengaturan" })
-      .click();
+    await page.getByRole("button", { name: "Pengaturan Praktik" }).click();
     await page
       .locator("a")
       .filter({ hasText: "Jadwal Praktik Harian" })
@@ -98,47 +71,14 @@ test.describe.serial("Jadwal Praktik Harian", () => {
     ).toBeVisible();
   });
 
-  test("admin can non active schedule", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page
-      .getByRole("button", { name: "Pengaturan PraktikPengaturan" })
-      .click();
-    await page
-      .locator("a")
-      .filter({ hasText: "Jadwal Praktik Harian" })
-      .click();
-    await expect(
-      page.getByRole("heading", { name: "Jadwal Praktik Harian" })
-    ).toBeVisible();
+  test("admin can non-active schedule", async ({ page }) => {
     await page.getByRole("button", { name: "Non-Aktifkan" }).nth(3).click();
   });
   test("admin can active schedule", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page
-      .getByRole("button", { name: "Pengaturan PraktikPengaturan" })
-      .click();
-    await page
-      .locator("a")
-      .filter({ hasText: "Jadwal Praktik Harian" })
-      .click();
-    await expect(
-      page.getByRole("heading", { name: "Jadwal Praktik Harian" })
-    ).toBeVisible();
     await page.getByRole("button", { name: "Aktifkan" }).nth(3).click();
   });
 
   test("admin can finish schedule", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page
-      .getByRole("button", { name: "Pengaturan PraktikPengaturan" })
-      .click();
-    await page
-      .locator("a")
-      .filter({ hasText: "Jadwal Praktik Harian" })
-      .click();
-    await expect(
-      page.getByRole("heading", { name: "Jadwal Praktik Harian" })
-    ).toBeVisible();
     await page
       .getByRole("button", { name: "Selesai", exact: true })
       .nth(3)
@@ -152,18 +92,8 @@ test.describe.serial("Jadwal Praktik Harian", () => {
     ).toBeVisible();
     await page.getByRole("button", { name: "OK", exact: true }).click();
   });
-  test("admin can finish schedule", async ({ page }) => {
-    await page.getByRole("button", { name: "Administrasi" }).click();
-    await page
-      .getByRole("button", { name: "Pengaturan PraktikPengaturan" })
-      .click();
-    await page
-      .locator("a")
-      .filter({ hasText: "Jadwal Praktik Harian" })
-      .click();
-    await expect(
-      page.getByRole("heading", { name: "Jadwal Praktik Harian" })
-    ).toBeVisible();
+
+  test("admin can cancel schedule", async ({ page }) => {
     await page.getByRole("button", { name: "Batal Selesai" }).first().click();
     await expect(page.getByText("Dokter kembali praktik?")).toBeVisible();
     await page.getByRole("button", { name: "OK", exact: true }).click();

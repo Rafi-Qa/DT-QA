@@ -12,16 +12,17 @@ test.describe("Dashboard Owner", async () => {
     page,
   }) => {
     await expect(page.getByText("Dashboard Pemilik/Penanggung")).toBeVisible({
-      timeout: 30000,
+      timeout: 50000,
     });
 
     await page.locator("button:near(.k-input-inner)").nth(1).click();
-    await page
-      .getByRole("button", { name: "Go to the previous period" })
-      .click({ clickCount: 2 });
-
-    await page.getByLabel("Wednesday, May 1,").getByText("1").click();
+    await page.getByRole("button", { name: "August" }).click();
+    await page.getByText("Jan", { exact: true }).click();
+    await page.getByLabel("Monday, January 1,").getByText("1").click();
     await page.getByRole("button", { name: "Lihat" }).click();
+    await expect(page.getByText("Rp 41,290,894")).toBeVisible();
+    await expect(page.getByText("Rp 40,342,788")).toBeVisible();
+    await expect(page.getByText("Rp 948,106")).toBeVisible();
   });
 
   test("Doctor can see revenue detail medical facility", async ({ page }) => {

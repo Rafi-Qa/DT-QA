@@ -21,7 +21,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
 
-  workers: 5,
+  workers: 8,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
@@ -76,7 +76,7 @@ export default defineConfig({
     // },
   ],
 
-  timeout: 1200000,
+  timeout: 120000,
   /* Run your local dev server before starting the tests */
   // webServer:
   //   process.env.LOCAL_SERVER === "true"

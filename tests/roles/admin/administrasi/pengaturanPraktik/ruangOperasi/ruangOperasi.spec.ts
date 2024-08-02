@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Ruang Operasi", () => {
+test.describe.serial("Ruang Operasi", () => {
   test.use({ storageState: "tests/auth/roles/admin.json" });
   test.beforeEach(async ({ page }) => {
     await page.goto("/MedicalFacilityDashboard");
@@ -34,6 +34,15 @@ test.describe("Ruang Operasi", () => {
     await expect(
       page.getByRole("gridcell", { name: "Ruang Operasi 4" })
     ).toBeVisible();
+  });
+
+  test("admin can't add surgery room with same name", async ({ page }) => {
+    await page.getByRole("button", { name: "Tambah" }).click();
+    await page.getByRole("textbox").click();
+    await page.getByRole("textbox").fill("Ruang Operasi 4");
+    await page.getByRole("button", { name: "Simpan" }).click();
+    await expect(page.getByText("Nama ruangan sudah ada")).toBeVisible();
+    await page.getByRole("button", { name: "OK" }).click();
   });
 
   test("admin can edit surgery room", async ({ page }) => {
